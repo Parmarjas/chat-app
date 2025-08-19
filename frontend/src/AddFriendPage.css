@@ -1,0 +1,180 @@
+:root {
+  --gradient-background: radial-gradient(circle at 50.3% 47.3%, rgba(30, 51, 83, 0.7) 0.1%, rgba(6, 7, 11, 0.7) 90%);
+}
+
+
+.add-friend-container {
+  display: flex;  
+  flex-direction: row;
+  align-items: stretch;
+  gap: 50px;
+  padding: 40px 10px;
+  height: calc(100vh - 80px);
+  min-height: 600px;
+  background: linear-gradient(90deg, rgb(20, 25, 22) 0%, rgb(20, 25, 22) 2.941%, rgb(31, 31, 26) 2.941%, rgb(31, 31, 26) 5.882%, rgb(42, 38, 31) 5.882%, rgb(42, 38, 31) 8.824%, rgb(54, 44, 35) 8.824%, rgb(54, 44, 35) 11.765%, rgb(66, 51, 40) 11.765%, rgb(66, 51, 40) 14.706%, rgb(77, 57, 45) 14.706%, rgb(77, 57, 45) 17.647%, rgb(88, 63, 49) 17.647%, rgb(88, 63, 49) 20.588%, rgb(98, 69, 54) 20.588%, rgb(98, 69, 54) 23.529%, rgb(108, 74, 58) 23.529%, rgb(108, 74, 58) 26.471%, rgb(116, 80, 62) 26.471%, rgb(116, 80, 62) 29.412%, rgb(124, 84, 66) 29.412%, rgb(124, 84, 66) 32.353%, rgb(130, 89, 70) 32.353%, rgb(130, 89, 70) 35.294%, rgb(134, 92, 73) 35.294%, rgb(134, 92, 73) 38.235%, rgb(138, 96, 77) 38.235%, rgb(138, 96, 77) 41.176%, rgb(140, 98, 79) 41.176%, rgb(140, 98, 79) 44.118%, rgb(140, 100, 82) 44.118%, rgb(140, 100, 82) 47.059%, rgb(139, 102, 84) 47.059%, rgb(139, 102, 84) 50%, rgb(137, 103, 85) 50%, rgb(137, 103, 85) 52.941%, rgb(133, 103, 86) 52.941%, rgb(133, 103, 86) 55.882%, rgb(127, 103, 87) 55.882%, rgb(127, 103, 87) 58.824%, rgb(121, 102, 87) 58.824%, rgb(121, 102, 87) 61.765%, rgb(113, 100, 87) 61.765%, rgb(113, 100, 87) 64.706%, rgb(104, 98, 86) 64.706%, rgb(104, 98, 86) 67.647%, rgb(94, 95, 85) 67.647%, rgb(94, 95, 85) 70.588%, rgb(84, 91, 84) 70.588%, rgb(84, 91, 84) 73.529%, rgb(73, 87, 82) 73.529%, rgb(73, 87, 82) 76.471%, rgb(61, 83, 79) 76.471%, rgb(61, 83, 79) 79.412%, rgb(50, 78, 76) 79.412%, rgb(50, 78, 76) 82.353%, rgb(38, 73, 73) 82.353%, rgb(38, 73, 73) 85.294%, rgb(26, 67, 70) 85.294%, rgb(26, 67, 70) 88.235%, rgb(15, 61, 66) 88.235%, rgb(15, 61, 66) 91.176%, rgb(5, 55, 62) 91.176%, rgb(5, 55, 62) 94.118%, rgb(0, 48, 58) 94.118%, rgb(0, 48, 58) 97.059%, rgb(0, 42, 54) 97.059%, rgb(0, 42, 54) 100%);
+ /* background: radial-gradient(circle at 10% 20%, rgb(100, 43, 115) 0%, rgb(4, 0, 4) 90%); */
+  /* background: linear-gradient(90deg, rgb(36, 0, 77) 0%, rgb(36, 0, 77) 2.941%, rgb(46, 0, 79) 2.941%, rgb(46, 0, 79) 5.882%, rgb(57, 0, 81) 5.882%, rgb(57, 0, 81) 8.824%, rgb(67, 0, 84) 8.824%, rgb(67, 0, 84) 11.765%, rgb(78, 0, 86) 11.765%, rgb(78, 0, 86) 14.706%, rgb(89, 0, 89) 14.706%, rgb(89, 0, 89) 17.647%, rgb(99, 0, 93) 17.647%, rgb(99, 0, 93) 20.588%, rgb(110, 0, 97) 20.588%, rgb(110, 0, 97) 23.529%, rgb(120, 0, 100) 23.529%, rgb(120, 0, 100) 26.471%, rgb(130, 0, 105) 26.471%, rgb(130, 0, 105) 29.412%, rgb(140, 0, 109) 29.412%, rgb(140, 0, 109) 32.353%, rgb(149, 0, 114) 32.353%, rgb(149, 0, 114) 35.294%, rgb(158, 0, 119) 35.294%, rgb(158, 0, 119) 38.235%, rgb(167, 0, 124) 38.235%, rgb(167, 0, 124) 41.176%, rgb(175, 0, 130) 41.176%, rgb(175, 0, 130) 44.118%, rgb(182, 0, 135) 44.118%, rgb(182, 0, 135) 47.059%, rgb(189, 0, 141) 47.059%, rgb(189, 0, 141) 50%, rgb(195, 0, 147) 50%, rgb(195, 0, 147) 52.941%, rgb(201, 0, 153) 52.941%, rgb(201, 0, 153) 55.882%, rgb(206, 0, 159) 55.882%, rgb(206, 0, 159) 58.824%, rgb(210, 0, 165) 58.824%, rgb(210, 0, 165) 61.765%, rgb(214, 0, 172) 61.765%, rgb(214, 0, 172) 64.706%, rgb(217, 0, 178) 64.706%, rgb(217, 0, 178) 67.647%, rgb(219, 0, 185) 67.647%, rgb(219, 0, 185) 70.588%, rgb(220, 0, 191) 70.588%, rgb(220, 0, 191) 73.529%, rgb(220, 0, 197) 73.529%, rgb(220, 0, 197) 76.471%, rgb(220, 0, 204) 76.471%, rgb(220, 0, 204) 79.412%, rgb(219, 0, 210) 79.412%, rgb(219, 0, 210) 82.353%, rgb(217, 0, 217) 82.353%, rgb(217, 0, 217) 85.294%, rgb(214, 0, 223) 85.294%, rgb(214, 0, 223) 88.235%, rgb(211, 0, 229) 88.235%, rgb(211, 0, 229) 91.176%, rgb(207, 0, 235) 91.176%, rgb(207, 0, 235) 94.118%, rgb(202, 0, 241) 94.118%, rgb(202, 0, 241) 97.059%, rgb(196, 0, 247) 97.059%, rgb(196, 0, 247) 100%); */
+}
+
+.friend-selection {
+  width: 270px;
+  min-width: 180px;
+  max-width: 300px;
+  padding: 28px 20px 28px 20px;
+  border-radius: 18px;
+  background: var(--gradient-background);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.18), 0 1.5px 5px rgba(0, 0, 0, 0.10);
+  flex: 1 1 0;
+  border: 1px solid rgb(163, 147, 147);
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  word-break: break-word;
+  margin-left: 0;
+  justify-content: flex-start;
+}
+
+.profile-section {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+border: 1px solid rgb(163, 147, 147);
+background: var(--gradient-background);
+  border-radius: 18px;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.20), 0 1.5px 5px rgba(0,0,0,0.10);
+  padding: 0;
+  color: #f2f2f2;
+  overflow-y: auto;
+  position: relative;
+  margin-left: 0;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide scrollbar for webkit browsers */
+.profile-section::-webkit-scrollbar {
+  display: none;
+}
+
+.friend-selection h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #43e97b;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* .profile-edit-name {
+  height: 32px;
+  border-radius: 8px;
+  border: 1.5px solid #384151;
+  padding: 0 12px;
+  font-size: 1rem;
+  margin-bottom: 14px !important;
+  outline: none;
+  transition: border 0.2s, background 0.2s;
+  background: #2d3748;
+  color: #f7fafc;
+} */
+.profile-edit-name:focus {
+  border: 1.5px solid #43e97b;
+  background: #23272f;
+}
+
+.friend-selection ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  max-height: 400px; /* Height for exactly 8 users (8 * 50px per user) */
+  overflow-y: auto;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide scrollbar for webkit browsers */
+.friend-selection ul::-webkit-scrollbar {
+  display: none;
+}
+
+.friend-selection ul li {
+  background: #2d3748;
+  color: #f7fafc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.08rem;
+  box-shadow: 0 1px 4px rgba(67,233,123,0.04);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  border: 1.2px solid transparent;
+  height: 50px; /* Fixed height for each user item */
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.friend-selection ul li:hover {
+  background: #23272f;
+  color: #43e97b;
+  box-shadow: 0 2px 8px rgba(67,233,123,0.10);
+  border: 1.2px solid #43e97b;
+}
+.friend-selection ul li.selected,
+.friend-selection ul li:active {
+  background: #43e97b;
+  color: #fff;
+  border: 1.2px solid #43e97b;
+}
+
+.profile-card-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-btn {
+  width: 220px;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.close-profile-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  color: white;
+  padding: 4px 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.18s;
+}
+.close-profile-btn:hover {
+  color: #43e97b;
+}
+
+@media (max-width: 900px) {
+  .add-friend-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 18px 0;
+    min-height: 100vh;
+  }
+  .friend-selection, .profile-section {
+    width: 98vw;
+    min-width: 0;
+    max-width: 420px;
+    padding: 24px 8vw 24px 8vw;
+    border-radius: 14px;
+  }
+}

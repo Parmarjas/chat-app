@@ -1,0 +1,129 @@
+:root {
+  --primary-green: #43e97b;
+  --primary-dark: #2d3748;
+  --primary-white: #fff;
+  --danger: #ff5252;
+}
+
+.navbar-brand {
+  width: 100%;
+  background: rgba(15, 25, 40, 0.6);
+  color: #fff;
+  font-size: 3.3rem;
+  font-weight: bold;
+  font-family: "Gemunu Libre", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 2px;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand span {
+  margin-left: 60px;
+}
+
+.register-bg {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(20, 25, 22) 0%, rgb(20, 25, 22) 2.941%, rgb(31, 31, 26) 2.941%, rgb(31, 31, 26) 5.882%, rgb(42, 38, 31) 5.882%, rgb(42, 38, 31) 8.824%, rgb(54, 44, 35) 8.824%, rgb(54, 44, 35) 11.765%, rgb(66, 51, 40) 11.765%, rgb(66, 51, 40) 14.706%, rgb(77, 57, 45) 14.706%, rgb(77, 57, 45) 17.647%, rgb(88, 63, 49) 17.647%, rgb(88, 63, 49) 20.588%, rgb(98, 69, 54) 20.588%, rgb(98, 69, 54) 23.529%, rgb(108, 74, 58) 23.529%, rgb(108, 74, 58) 26.471%, rgb(116, 80, 62) 26.471%, rgb(116, 80, 62) 29.412%, rgb(124, 84, 66) 29.412%, rgb(124, 84, 66) 32.353%, rgb(130, 89, 70) 32.353%, rgb(130, 89, 70) 35.294%, rgb(134, 92, 73) 35.294%, rgb(134, 92, 73) 38.235%, rgb(138, 96, 77) 38.235%, rgb(138, 96, 77) 41.176%, rgb(140, 98, 79) 41.176%, rgb(140, 98, 79) 44.118%, rgb(140, 100, 82) 44.118%, rgb(140, 100, 82) 47.059%, rgb(139, 102, 84) 47.059%, rgb(139, 102, 84) 50%, rgb(137, 103, 85) 50%, rgb(137, 103, 85) 52.941%, rgb(133, 103, 86) 52.941%, rgb(133, 103, 86) 55.882%, rgb(127, 103, 87) 55.882%, rgb(127, 103, 87) 58.824%, rgb(121, 102, 87) 58.824%, rgb(121, 102, 87) 61.765%, rgb(113, 100, 87) 61.765%, rgb(113, 100, 87) 64.706%, rgb(104, 98, 86) 64.706%, rgb(104, 98, 86) 67.647%, rgb(94, 95, 85) 67.647%, rgb(94, 95, 85) 70.588%, rgb(84, 91, 84) 70.588%, rgb(84, 91, 84) 73.529%, rgb(73, 87, 82) 73.529%, rgb(73, 87, 82) 76.471%, rgb(61, 83, 79) 76.471%, rgb(61, 83, 79) 79.412%, rgb(50, 78, 76) 79.412%, rgb(50, 78, 76) 82.353%, rgb(38, 73, 73) 82.353%, rgb(38, 73, 73) 85.294%, rgb(26, 67, 70) 85.294%, rgb(26, 67, 70) 88.235%, rgb(15, 61, 66) 88.235%, rgb(15, 61, 66) 91.176%, rgb(5, 55, 62) 91.176%, rgb(5, 55, 62) 94.118%, rgb(0, 48, 58) 94.118%, rgb(0, 48, 58) 97.059%, rgb(0, 42, 54) 97.059%, rgb(0, 42, 54) 100%)
+}
+
+.register-card {
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 36px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1.5px solid #e2e8f0;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: rgb(15, 25, 40);
+  /* or #00e676, #38f9a4 */
+  font-weight: 700;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-input {
+  padding: 12px 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  outline: none;
+  transition: border 0.2s;
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.register-input:focus {
+  border: 1.5px solid var(--primary-green);
+}
+
+.register-btn {
+  background: linear-gradient(to right, #387b8e 0%, #71B280 51%, #387b8e 100%);
+  padding: 12px 0;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+  color: rgb(54, 50, 48);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.register-btn:hover {
+  background: linear-gradient(to left, #71B280 0%, #387b8e 51%, #71B280 100%);
+  transform: translateY(-2px) scale(1.03);
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.register-error {
+  color: var(--danger);
+  background: rgb(255, 234, 234, 0.5);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 0.98rem;
+}
+
+.register-link-text {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 1rem;
+  color: #827b7b;
+}
+
+.register-link {
+  color: rgb(112, 74, 148);
+  margin-left: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

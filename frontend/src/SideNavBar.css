@@ -1,0 +1,124 @@
+/* SideNavBar specific variables */
+:root {
+  --sidebar-bg: linear-gradient(180deg, rgb(45, 55, 72, 0.8) 0%, rgb(26, 32, 44, 0.8) 50%, rgb(15, 20, 25, 0.8) 100%);
+  --sidebar-active: linear-gradient(135deg, #63E6BE 0%, #4ade80 100%);
+  --sidebar-hover: rgba(99, 230, 190, 0.1);
+  --sidebar-shadow: 2px 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.side-nav-bar {
+  width: 120px;
+  background: var(--sidebar-bg);
+  color: var(--primary-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: var(--sidebar-shadow);
+  z-index: 120;
+  transition: width 0.2s, background 0.2s;
+  border-right: 1px solid rgba(99, 230, 190, 0.2);
+}
+
+.side-nav-bar button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(99, 230, 190, 0.1);
+  color: var(--primary-white);
+  font-size: 22px;
+  margin: 14px 0;
+  padding: 16px 0;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.side-nav-bar button.active,
+.side-nav-bar button:hover {
+  background: var(--sidebar-active);
+  color: var(--primary-white);
+  box-shadow: 0 4px 16px rgba(99, 230, 190, 0.3);
+  border-color: rgba(99, 230, 190, 0.4);
+  transform: translateY(-2px);
+}
+
+.side-nav-bar button.active i,
+.side-nav-bar button:hover i {
+  color: #ffffff !important;
+}
+
+.side-nav-bar button.logout {
+  margin-top: auto;
+  margin-bottom: 30px;
+  color: var(--danger);
+  background: rgba(229, 62, 62, 0.1);
+  border-color: rgba(229, 62, 62, 0.3);
+}
+
+.side-nav-bar button.logout:hover {
+  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+  color: var(--primary-white);
+  border-color: rgba(229, 62, 62, 0.6);
+  box-shadow: 0 4px 16px rgba(229, 62, 62, 0.3);
+}
+
+.side-nav-bar button.logout:hover i {
+  color: #ffffff !important;
+}
+
+@media (max-width: 700px) {
+  .side-nav-bar {
+    flex-direction: row;
+    width: 100vw;
+    height: 64px;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    padding: 0 8px;
+    box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 16px 16px 0 0;
+    justify-content: center;
+    border-right: none;
+    border-top: 1px solid rgba(99, 230, 190, 0.2);
+  }
+  .side-nav-bar button {
+    flex: 1 1 0;
+    margin: 0 4px;
+    padding: 8px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    min-width: 0;
+    max-width: 60px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  .side-nav-bar button span {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .side-nav-bar button:not(.active) {
+    color: var(--primary-white);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .side-nav-bar button.active {
+    background: var(--sidebar-active);
+    color: var(--primary-white);
+  }
+  .side-nav-bar button.logout {
+    margin-top: 0;
+  }
+}
